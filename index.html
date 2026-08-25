@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacific Flowers | Envelopes Personalizados, Papelaria & Linha Educativa</title>
+  <meta name="description" content="Soluções completas em envelopes personalizados, papelaria institucional, giz de cera, cadernos, placas indicativas e materiais gráficos direto da fábrica." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/fd5b1a_1b44727ecd814c51948db7be6426fd15~mv2.jpg/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/fd5b1a_1b44727ecd814c51948db7be6426fd15~mv2.jpg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#15803d',
+              600: '#166534',
+              700: '#14532d',
+              800: '#0f3e22',
+              900: '#0a2916',
+            },
+            accent: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            paper: '#faf8f5',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS for polish -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-paper text-slate-800 antialiased font-sans flex flex-col min-h-screen">
+
+  <!-- TOP BAR DE ANÚNCIO / CONTATO DIRETO -->
+  <aside class="bg-slate-900 text-slate-200 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 text-center sm:text-left flex-wrap justify-center">
+        <span class="inline-flex items-center gap-1 text-emerald-400 font-medium">
+          <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Vendas Direto da Fábrica para todo o Brasil
+        </span>
+        <span class="hidden md:inline-block text-slate-500">•</span>
+        <span class="hidden md:inline-flex items-center gap-1 text-slate-300">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-slate-400"></i> Seg a Sex: 08:00 às 17:48
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="tel:4733719993" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i> (47) 3371-9993
+        </a>
+        <span class="text-slate-600">|</span>
+        <a href="mailto:pedido@pacificflowers.com.br" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i> pedido@pacificflowers.com.br
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVBAR FIXA -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-200" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 p-0.5 shadow-md shadow-brand-700/20 group-hover:scale-105 transition-transform flex items-center justify-center">
+          <img src="https://static.wixstatic.com/media/fd5b1a_fa375c3fdf134aac81241f966e07f25e~mv2.png/v1/fill/w_120,h_120,al_c,q_85,enc_avif,quality_auto/Logo.png" 
+               alt="Logo Pacific Flowers" 
+               class="w-10 h-10 object-contain rounded-lg bg-white/90 p-1"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <i data-lucide="flower-2" class="w-7 h-7 text-white hidden"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors">
+            Pacific<span class="text-brand-600">Flowers</span>
+          </span>
+          <span class="text-[11px] font-semibold text-slate-500 tracking-wider uppercase">Indústria & Comércio</span>
+        </div>
+      </a>
+
+      <!-- MENU DE NAVEGAÇÃO DESKTOP -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#sobre" class="hover:text-brand-600 transition-colors">Sobre a Empresa</a>
+        <a href="#catalogo" class="hover:text-brand-600 transition-colors">Linhas de Produtos</a>
+        <a href="#b2b" class="hover:text-brand-600 transition-colors">Personalização & B2B</a>
+        <a href="#diferenciais" class="hover:text-brand-600 transition-colors">Diferenciais</a>
+        <a href="#faq" class="hover:text-brand-600 transition-colors">Dúvidas</a>
+      </nav>
+
+      <!-- 3 BOTÕES DE AÇÃO PRINCIPAIS (DESKTOP) -->
+      <div class="hidden md:flex items-center gap-2.5">
+        <!-- BOTÃO 1: ENTRAR EM CONTATO -->
+        <a href="#contato" data-action="contato" class="btn-contato inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-all border border-slate-200">
+          <i data-lucide="message-square" class="w-3.5 h-3.5 text-slate-600"></i>
+          <span>Entrar em Contato</span>
+        </a>
+
+        <!-- BOTÃO 2: CONHECER O CATÁLOGO -->
+        <a href="#catalogo" data-action="catalogo" class="btn-catalogo inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-100 rounded-lg transition-all border border-brand-200">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 text-brand-600"></i>
+          <span>Catálogo</span>
+        </a>
+
+        <!-- BOTÃO 3: FAZER UM PEDIDO (DESTAQUE PRINCIPAL) -->
+        <a href="#contato" data-action="pedido" class="btn-pedido inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-brand-600 hover:bg-brand-700 active:bg-brand-800 rounded-lg shadow-sm shadow-brand-600/30 hover:shadow-brand-600/40 hover:-translate-y-0.5 transition-all">
+          <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
+          <span>Fazer um Pedido</span>
+        </a>
+      </div>
+
+      <!-- BOTÃO MOBILE MENU -->
+      <button id="mobileMenuBtn" aria-label="Abrir Menu" class="lg:hidden p-2 text-slate-700 hover:text-brand-600 focus:outline-none rounded-lg hover:bg-slate-100">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+
+    <!-- MENU MOBILE RETRÁTIL -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 shadow-xl animate-fadeIn">
+      <nav class="flex flex-col gap-3 text-base font-medium text-slate-700 mb-5">
+        <a href="#sobre" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Sobre a Empresa</a>
+        <a href="#catalogo" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Linhas de Produtos</a>
+        <a href="#b2b" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Personalização & B2B</a>
+        <a href="#diferenciais" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Diferenciais</a>
+        <a href="#faq" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Dúvidas Frequentes</a>
+      </nav>
+
+      <!-- 3 BOTÕES NO MENU MOBILE -->
+      <div class="flex flex-col gap-2.5">
+        <a href="#contato" data-action="pedido" class="btn-pedido w-full flex items-center justify-center gap-2 py-3 text-sm font-bold text-white bg-brand-600 rounded-xl shadow-md">
+          <i data-lucide="shopping-bag" class="w-4 h-4"></i> Fazer um Pedido
+        </a>
+        <a href="#catalogo" data-action="catalogo" class="btn-catalogo w-full flex items-center justify-center gap-2 py-2.5 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 rounded-xl">
+          <i data-lucide="book-open" class="w-4 h-4 text-brand-600"></i> Conhecer o Catálogo de Produtos
+        </a>
+        <a href="#contato" data-action="contato" class="btn-contato w-full flex items-center justify-center gap-2 py-2.5 text-sm font-semibold text-slate-700 bg-slate-100 border border-slate-200 rounded-xl">
+          <i data-lucide="message-square" class="w-4 h-4 text-slate-600"></i> Entrar em Contato
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-brand-50/60 via-white to-paper pt-12 pb-20 md:pt-16 md:pb-28">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- TEXTO HERO -->
+        <div class="lg:col-span-7 flex flex-col items-start text-left">
+          
+          <!-- Selo Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/80 border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+            Direto da Fábrica • Jaraguá do Sul / SC
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+            Envelopes Personalizados, <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500">Papelaria & Linha Educativa</span> de Alto Padrão.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl">
+            Soluções completas para empresas, papelarias, escolas e comércios. Fornecemos envelopes kraft e plásticos sob medida, giz de cera, cadernos escolares e materiais para PDV com qualidade garantida e agilidade em grandes volumes.
+          </p>
+
+          <!-- 3 BOTÕES DE AÇÃO HERO (DESTAQUE MÁXIMO) -->
+          <div class="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-10">
+            
+            <!-- AÇÃO 1: FAZER UM PEDIDO -->
+            <a href="#contato" data-action="pedido" class="btn-pedido inline-flex justify-center items-center gap-2.5 px-6 py-3.5 text-base font-bold text-white bg-brand-600 hover:bg-brand-700 active:bg-brand-800 rounded-xl shadow-lg shadow-brand-600/30 hover:shadow-brand-600/40 hover:-translate-y-0.5 transition-all text-center">
+              <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+              <span>Fazer um Pedido</span>
+            </a>
+
+            <!-- AÇÃO 2: CONHECER CATÁLOGO -->
+            <a href="#catalogo" data-action="catalogo" class="btn-catalogo inline-flex justify-center items-center gap-2.5 px-6 py-3.5 text-base font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-sm hover:border-brand-500 hover:text-brand-700 hover:-translate-y-0.5 transition-all text-center">
+              <i data-lucide="layers" class="w-5 h-5 text-brand-600"></i>
+              <span>Conhecer o Catálogo</span>
+            </a>
+
+            <!-- AÇÃO 3: ENTRAR EM CONTATO -->
+            <a href="#contato" data-action="contato" class="btn-contato inline-flex justify-center items-center gap-2 px-5 py-3.5 text-sm font-semibold text-slate-600 hover:text-slate-900 bg-slate-100/80 hover:bg-slate-200/80 rounded-xl transition-all text-center border border-slate-200">
+              <i data-lucide="phone-call" class="w-4 h-4 text-slate-500"></i>
+              <span>Fale Conosco</span>
+            </a>
+
+          </div>
+
+          <!-- TRUST BADGES / DIFERENCIAIS RÁPIDOS -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 w-full">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center shrink-0">
+                <i data-lucide="factory" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <p class="font-bold text-slate-900">Fabricação Própria</p>
+                <p class="text-slate-500">Preços competitivos</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                <i data-lucide="truck" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <p class="font-bold text-slate-900">Entrega Nacional</p>
+                <p class="text-slate-500">Envio ágil e seguro</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 col-span-2 sm:col-span-1">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <p class="font-bold text-slate-900">CNPJ Ativo & Tradição</p>
+                <p class="text-slate-500">Atendimento consultivo</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CARD VISUAL DO HERO -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl shadow-brand-900/10 border border-slate-100 relative z-10">
+              <div class="flex items-center justify-between pb-5 border-b border-slate-100 mb-6">
+                <div>
+                  <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Linhas em Destaque</span>
+                  <h2 class="text-xl font-bold text-slate-900">Mix Completo de Produtos</h2>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-800">
+                  B2B & Atacado
+                </span>
+              </div>
+
+              <!-- Mini cards de categorias no hero -->
+              <div class="space-y-3.5">
+                <div class="flex items-center gap-3.5 p-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-brand-50/50 transition-colors">
+                  <div class="w-12 h-12 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-bold text-slate-900">Envelopes Kraft & Personalizados</h3>
+                    <p class="text-xs text-slate-500 truncate">Comerciais, plásticos DAC, caixas com 100/250un</p>
+                  </div>
+                  <span class="text-xs font-semibold text-brand-600">Sob Medida</span>
+                </div>
+
+                <div class="flex items-center gap-3.5 p-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-brand-50/50 transition-colors">
+                  <div class="w-12 h-12 rounded-lg bg-pink-100 text-pink-700 flex items-center justify-center shrink-0">
+                    <i data-lucide="palette" class="w-6 h-6"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-bold text-slate-900">Giz de Cera & Linha Educativa</h3>
+                    <p class="text-xs text-slate-500 truncate">Cartinhas para colorir, caligrafia, livros 20x30</p>
+                  </div>
+                  <span class="text-xs font-semibold text-brand-600">Escolar</span>
+                </div>
+
+                <div class="flex items-center gap-3.5 p-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-brand-50/50 transition-colors">
+                  <div class="w-12 h-12 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+                    <i data-lucide="book" class="w-6 h-6"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-bold text-slate-900">Cadernos & Cadernetas</h3>
+                    <p class="text-xs text-slate-500 truncate">Desenho, pautados, capas flexíveis 48/96 folhas</p>
+                  </div>
+                  <span class="text-xs font-semibold text-brand-600">Papelaria</span>
+                </div>
+
+                <div class="flex items-center gap-3.5 p-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-brand-50/50 transition-colors">
+                  <div class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                    <i data-lucide="tag" class="w-6 h-6"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-bold text-slate-900">Placas Indicativas & Cartazes PDV</h3>
+                    <p class="text-xs text-slate-500 truncate">Sinalização 20x30, 15x20, cartazes de oferta</p>
+                  </div>
+                  <span class="text-xs font-semibold text-brand-600">Comércio</span>
+                </div>
+              </div>
+
+              <!-- CTA de rodapé do card -->
+              <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs text-slate-500">Pronto para abastecer seu estoque?</span>
+                <a href="#catalogo" data-action="catalogo" class="btn-catalogo text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center gap-1">
+                  Ver todas as opções <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Efeito decorativo card -->
+            <div class="absolute -bottom-4 -right-4 w-full h-full bg-gradient-to-tr from-brand-600 to-emerald-400 rounded-3xl -z-10 opacity-20"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE NÚMEROS / MÉTRICAS DE CONFIANÇA -->
+  <section class="bg-brand-900 text-white py-10 border-y border-brand-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-brand-800/80">
+        
+        <div class="pt-4 md:pt-0">
+          <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">+100%</p>
+          <p class="text-xs sm:text-sm text-slate-300 font-medium">Personalizável com sua Marca</p>
+        </div>
+
+        <div class="pt-4 md:pt-0">
+          <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">Direto</p>
+          <p class="text-xs sm:text-sm text-slate-300 font-medium">Da Indústria para seu Negócio</p>
+        </div>
+
+        <div class="pt-4 md:pt-0">
+          <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">Variedade</p>
+          <p class="text-xs sm:text-sm text-slate-300 font-medium">Envelopes, Papelaria & Brinquedos</p>
+        </div>
+
+        <div class="pt-4 md:pt-0">
+          <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">Brasil</p>
+          <p class="text-xs sm:text-sm text-slate-300 font-medium">Logística e Envio para Todo o País</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE A EMPRESA -->
+  <section id="sobre" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- IMAGEM / CARD ILUSTRATIVO SOBRE -->
+        <div class="lg:col-span-5 order-2 lg:order-1">
+          <div class="bg-gradient-to-br from-brand-800 to-slate-900 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-brand-500/20 rounded-full blur-2xl"></div>
+            
+            <div class="relative z-10">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-6">
+                <i data-lucide="building-2" class="w-3.5 h-3.5"></i> Perfil Corporativo
+              </span>
+
+              <h2 class="text-2xl font-bold mb-4">Pacific Flowers Indústria e Comércio Ltda</h2>
+              <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                Sediada no polo industrial de Jaraguá do Sul, Santa Catarina, a Pacific Flowers atua com dedicação na produção e distribuição de materiais gráficos, papelaria escolar e institucional, suprimentos para embalagens e comunicação para pontos de venda.
+              </p>
+
+              <!-- Dados Institucionais -->
+              <div class="space-y-3 bg-white/10 rounded-2xl p-4 text-xs backdrop-blur-sm border border-white/10">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400 font-medium">CNPJ:</span>
+                  <span class="font-mono font-semibold text-emerald-300">03.772.965/0001-90</span>
+                </div>
+                <div class="flex items-start justify-between gap-2">
+                  <span class="text-slate-400 font-medium shrink-0">Endereço:</span>
+                  <span class="text-right text-slate-200">R. João Franzner, 21 - São Luís, Jaraguá do Sul - SC</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400 font-medium">Segmento:</span>
+                  <span class="text-slate-200">Indústria & Comércio de Papéis e Gráfica</span>
+                </div>
+              </div>
+
+              <!-- Botão Contato Sobre -->
+              <div class="mt-6 pt-4 border-t border-white/15 flex items-center justify-between">
+                <span class="text-xs text-slate-400">Precisa de cotação corporativa?</span>
+                <a href="#contato" data-action="contato" class="btn-contato text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1 transition-colors">
+                  Fale com a equipe <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTEÚDO TEXTUAL SOBRE -->
+        <div class="lg:col-span-7 order-1 lg:order-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold uppercase tracking-wider mb-4">
+            Conheça Nossa História & Missão
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+            Compromisso com a Excelência, Prazos Rigorosos e <span class="text-brand-600">Alta Precisão Gráfica.</span>
+          </h2>
+
+          <p class="text-base text-slate-600 leading-relaxed mb-6">
+            A <strong>Pacific Flowers</strong> nasceu com o propósito de oferecer ao mercado brasileiro produtos de papelaria, envelopes e materiais educativos com padrão superior de acabamento, resistência e apresentação.
+          </p>
+
+          <p class="text-base text-slate-600 leading-relaxed mb-8">
+            Atendemos desde pequenas empresas e comércios locais até grandes distribuidores, redes de papelaria e instituições educacionais que buscam personalização sob encomenda, pedidos em caixas fechadas ou projetos gráficos personalizados.
+          </p>
+
+          <!-- 3 Pilares -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+              <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-3">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900 mb-1">Qualidade Rigorosa</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">Gramaturas precisas, colagem de alta aderência e corte sem rebarbas.</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+                <i data-lucide="sliders" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900 mb-1">Personalização Total</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">Impressão com a identidade da sua marca em envelopes e cadernos.</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-3">
+                <i data-lucide="users-2" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900 mb-1">Atendimento B2B</h3>
+              <p class="text-xs text-slate-500 leading-relaxed">Condições para atacado, suporte humanizado e notas fiscais com agilidade.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO INTERATIVO DE PRODUTOS -->
+  <section id="catalogo" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho do Catálogo -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3">
+          Linha Completa de Produtos
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+          Conheça Nosso Catálogo
+        </h2>
+        <p class="text-slate-600 text-base">
+          Navegue pelas nossas categorias principais e encontre o produto ideal para o seu negócio ou revenda.
+        </p>
+      </div>
+
+      <!-- BOTÕES DE FILTRO / ABAS DE CATEGORIA -->
+      <div class="flex items-center justify-center gap-2 flex-wrap mb-10" id="categoryTabs">
+        <button data-cat="all" class="cat-tab active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-sm">
+          Todos os Produtos
+        </button>
+        <button data-cat="envelopes" class="cat-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all">
+          ✉️ Envelopes & Embalagens
+        </button>
+        <button data-cat="educativo" class="cat-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all">
+          🎨 Giz de Cera & Educativo
+        </button>
+        <button data-cat="cadernos" class="cat-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all">
+          📓 Cadernos & Papelaria
+        </button>
+        <button data-cat="pdv" class="cat-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all">
+          🏷️ Placas & PDV
+        </button>
+        <button data-cat="manuais" class="cat-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all">
+          📄 Manuais & Especiais
+        </button>
+      </div>
+
+      <!-- GRID DE CARDS DE PRODUTOS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
+
+        <!-- PRODUTO 1: Envelope Kraft Natural 250un -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="envelopes">
+          <div class="h-48 bg-gradient-to-br from-amber-50 to-amber-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Atacado</span>
+            <div class="w-24 h-24 rounded-2xl bg-amber-200/80 text-amber-800 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="mail" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Envelopes Kraft</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Envelope Kraft Natural - Caixa 250un</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Envelopes resistentes em papel kraft natural de alta qualidade para escritórios, correspondências e envio de documentos.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Caixa lacrada com 250 unidades</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Alta resistência e acabamento uniforme</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 2: Envelope Kraft Natural 100un -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="envelopes">
+          <div class="h-48 bg-gradient-to-br from-amber-50 to-amber-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Pronta Entrega</span>
+            <div class="w-24 h-24 rounded-2xl bg-amber-200/80 text-amber-800 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="inbox" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Envelopes Kraft</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Envelope Kraft Natural - Caixa 100un</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Versão compacta ideal para pequenos comércios, escritórios e uso contínuo com praticidade.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Embalagem prática com 100 unidades</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Papel kraft selecionado</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 3: Envelope Plástico DAC 100un -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="envelopes">
+          <div class="h-48 bg-gradient-to-br from-blue-50 to-blue-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Proteção</span>
+            <div class="w-24 h-24 rounded-2xl bg-blue-200/80 text-blue-800 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="file-check-2" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Envelopes Plásticos</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Envelope Plástico DAC - 100un</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Envelopes plásticos transparentes e reforçados, disponíveis com ou sem furação para pastas catálogo.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Com ou sem furo para fichários</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Pacote com 100 unidades</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 4: Envelopes 100% Personalizados -->
+        <div class="product-card group bg-white rounded-2xl border-2 border-brand-300 overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="envelopes">
+          <div class="h-48 bg-gradient-to-br from-brand-600 to-emerald-700 p-6 flex items-center justify-center relative overflow-hidden text-white">
+            <span class="absolute top-3 left-3 bg-amber-400 text-slate-900 text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase">Personalizado</span>
+            <div class="w-24 h-24 rounded-2xl bg-white/20 backdrop-blur-sm text-white flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="sparkles" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Solução Corporativa</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Envelopes com a sua Logomarca</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Impressão institucional com sua arte, cores e formato sob medida para valorizar a imagem da sua empresa.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-brand-50/60 p-2.5 rounded-lg border border-brand-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-700 font-bold"></i> Tiragens personalizadas</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-700 font-bold"></i> Formatos e papéis exclusivos</li>
+              </ul>
+            </div>
+            <a href="#b2b" data-action="contato" class="btn-contato w-full py-2.5 px-3 bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Solicitar Cotação
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 5: Cartinhas para Colorir + Giz 6 Cores -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="educativo">
+          <div class="h-48 bg-gradient-to-br from-pink-50 to-purple-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-pink-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">+ Brinde Giz</span>
+            <div class="w-24 h-24 rounded-2xl bg-pink-200/80 text-pink-700 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="palette" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Linha Infantil</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Cartinhas para Colorir + Brinde Giz</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Kit completo de cartinhas temáticas para pintura e criatividade infantil, acompanhado de caixa de giz de cera 6 cores.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Acompanha giz de cera 6 cores</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Excelente saída para papelarias</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 6: Atividades Educativas 20x30 + Brinde -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="educativo">
+          <div class="h-48 bg-gradient-to-br from-indigo-50 to-indigo-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Educacional</span>
+            <div class="w-24 h-24 rounded-2xl bg-indigo-200/80 text-indigo-700 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="graduation-cap" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Material Pedagógico</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Atividades Educativas 20x30 + Brinde</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Bloco grande de atividades lúdicas e educativas no tamanho 20x30cm, estimulando coordenação motora e aprendizado.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Formato amplo 20x30cm</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Diversão e aprendizado integrados</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 7: Caligrafia 20x30 Sortido & Dinheirinho -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="educativo">
+          <div class="h-48 bg-gradient-to-br from-emerald-50 to-emerald-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Jogos & Treino</span>
+            <div class="w-24 h-24 rounded-2xl bg-emerald-200/80 text-emerald-700 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="pencil-ruler" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Escolar & Brinquedos</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Caligrafia 20x30 / Dinheirinho (12un)</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Linha completa de caligrafia sortida para desenvolvimento escolar e pacotes de Dinheirinho/Dinheirão para brincadeiras educativas.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Pacotes fechados para revenda</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Ideal para escolas e bazares</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 8: Cadernos de Desenho (48 e 96 folhas) -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="cadernos">
+          <div class="h-48 bg-gradient-to-br from-teal-50 to-teal-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-teal-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Papelaria</span>
+            <div class="w-24 h-24 rounded-2xl bg-teal-200/80 text-teal-800 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="book-marked" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Cadernos</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Caderno de Desenho (20x27,5cm / 20x14cm)</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Cadernos de capa flexível com folhas de alta alvura, disponíveis em 48 e 96 folhas para artes e desenhos escolares.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Opções de 48 e 96 folhas</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Capa flexível e resistente</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 9: Cadernetas & Cadernos Pautados -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="cadernos">
+          <div class="h-48 bg-gradient-to-br from-slate-100 to-slate-200/60 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-slate-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Escrita</span>
+            <div class="w-24 h-24 rounded-2xl bg-slate-300 text-slate-800 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="bookmark" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Papelaria & Anotações</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Cadernetas 10x13,7cm & Cadernos Pauta</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Cadernetas práticas de bolso e cadernos pautados em múltiplos tamanhos para rotina de trabalho ou estudos.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Pautas nítidas e papel encorpado</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Modelos 14x20cm e 20x27,5cm</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 10: Placas Indicativas & Sinalização -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="pdv">
+          <div class="h-48 bg-gradient-to-br from-orange-50 to-orange-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-orange-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Sinalização</span>
+            <div class="w-24 h-24 rounded-2xl bg-orange-200/80 text-orange-800 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="signpost" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Comunicação Visual</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Placas Indicativas (20x30, 15x20, 10x30, 7x30)</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Placas indicativas e informativas em diversos formatos para comércios, indústrias, condomínios e lojas.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Alta durabilidade e legibilidade</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Formatos 20x30, 15x20, 10x30 e 7x30cm</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 11: Cartazes de Oferta & Splash PDV -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="pdv">
+          <div class="h-48 bg-gradient-to-br from-yellow-50 to-amber-100/60 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">PDV Varejo</span>
+            <div class="w-24 h-24 rounded-2xl bg-amber-200 text-amber-900 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="megaphone" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Varejo & Supermercados</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Cartazes de Oferta & Splash Promocional</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Cartazes com solapa 20x30cm (pct 12un) e cartazes grandes de oferta 63x43cm (50 e 100un) para chamar a atenção no ponto de venda.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Cartaz 63x43cm e 20x30cm c/ solapa</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Destaque imediato de preços e promoções</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUTO 12: Manuais e Impressos Sob Demanda -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="manuais">
+          <div class="h-48 bg-gradient-to-br from-violet-50 to-violet-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-violet-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Sob Encomenda</span>
+            <div class="w-24 h-24 rounded-2xl bg-violet-200/80 text-violet-800 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+              <i data-lucide="file-text" class="w-12 h-12"></i>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Linha Industrial</span>
+              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Manuais Técnicos & Impressos Corporativos</h3>
+              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Produção gráfica de manuais de instrução, termos de garantia e folhetos técnicos para indústrias e montadoras.</p>
+              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Dobras e acabamentos especiais</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Tiragens em larga escala</li>
+              </ul>
+            </div>
+            <a href="#contato" data-action="contato" class="btn-contato w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+              <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Consultar Produção
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner de Ação Inferior do Catálogo -->
+      <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+        <div>
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-1">Não encontrou as medidas ou a especificação que procura?</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Desenvolvemos formatos especiais e tiragens exclusivas sob medida para sua empresa.</p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0 flex-wrap justify-center">
+          <a href="#contato" data-action="contato" class="btn-contato px-5 py-3 text-xs sm:text-sm font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all border border-slate-300">
+            Falar com Atendente
+          </a>
+          <a href="#contato" data-action="pedido" class="btn-pedido px-5 py-3 text-xs sm:text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 rounded-xl transition-all shadow-md shadow-brand-600/20">
+            Fazer um Pedido
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO B2B / PERSONALIZAÇÃO DE ENVELOPES -->
+  <section id="b2b" class="py-20 bg-gradient-to-br from-slate-900 via-brand-950 to-slate-900 text-white relative overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold uppercase tracking-wider mb-4">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Vendas Corporativas & Atacado
+          </span>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+            Personalize Envelopes e Materiais com a <span class="text-emerald-400">Identidade da sua Marca.</span>
+          </h2>
+
+          <p class="text-base text-slate-300 leading-relaxed mb-8">
+            Fortaleça a presença do seu negócio em cada correspondência e entrega. Produzimos envelopes em papel kraft, offset ou plásticos com impressão da sua logomarca, endereço, dados fiscais e acabamentos especiais.
+          </p>
+
+          <!-- 3 Passos Simples -->
+          <div class="space-y-4 mb-8">
+            
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+              <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-emerald-500/30">
+                1
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white mb-0.5">Defina o Modelo & Medidas</h3>
+                <p class="text-xs text-slate-400">Escolha entre kraft, offset ou plástico nas dimensões que sua operação necessita.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+              <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-emerald-500/30">
+                2
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white mb-0.5">Envie sua Arte ou Logo</h3>
+                <p class="text-xs text-slate-400">Nossa equipe técnica ajusta e valida a prova de impressão com rapidez e fidelidade de cores.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+              <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-emerald-500/30">
+                3
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white mb-0.5">Produção Ágil & Envio Seguro</h3>
+                <p class="text-xs text-slate-400">Fabricação industrial com controle de qualidade e envio rastreado direto para sua empresa.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CTAs B2B -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="#contato" data-action="contato" class="btn-contato inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-slate-900 bg-emerald-400 hover:bg-emerald-300 rounded-xl transition-all shadow-lg shadow-emerald-500/20 text-center">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>Solicitar Orçamento B2B</span>
+            </a>
+            <a href="#contato" data-action="pedido" class="btn-pedido inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/15 rounded-xl transition-all text-center">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+              <span>Fazer Pedido de Atacado</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Box de Destaques B2B -->
+        <div class="lg:col-span-6">
+          <div class="bg-white/10 border border-white/15 rounded-3xl p-6 sm:p-8 backdrop-blur-md">
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2.5">
+              <i data-lucide="check-check" class="w-6 h-6 text-emerald-400"></i> Por que comprar direto com a Pacific Flowers?
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-2xl bg-black/20 border border-white/5">
+                <i data-lucide="percent" class="w-6 h-6 text-amber-400 mb-2"></i>
+                <h4 class="text-sm font-bold text-white mb-1">Preços de Fábrica</h4>
+                <p class="text-xs text-slate-300">Sem intermediários, garantindo maior margem para lojistas e economia corporativa.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-black/20 border border-white/5">
+                <i data-lucide="layers" class="w-6 h-6 text-emerald-400 mb-2"></i>
+                <h4 class="text-sm font-bold text-white mb-1">Grandes Tiragens</h4>
+                <p class="text-xs text-slate-300">Capacidade produtiva para atender pedidos volumosos com prazos pontuais.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-black/20 border border-white/5">
+                <i data-lucide="file-check" class="w-6 h-6 text-blue-400 mb-2"></i>
+                <h4 class="text-sm font-bold text-white mb-1">Nota Fiscal 100%</h4>
+                <p class="text-xs text-slate-300">Faturamento facilitado para pessoa jurídica, com emissão de NF e suporte financeiro.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-black/20 border border-white/5">
+                <i data-lucide="headphones" class="w-6 h-6 text-purple-400 mb-2"></i>
+                <h4 class="text-sm font-bold text-white mb-1">Consultoria Dedicada</h4>
+                <p class="text-xs text-slate-300">Atendimento especializado para ajudar a escolher o formato e papel ideal.</p>
+              </div>
+            </div>
+
+            <!-- Faixa rápida de contato WhatsApp -->
+            <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between flex-wrap gap-3">
+              <span class="text-xs text-slate-300">Atendimento rápido via WhatsApp:</span>
+              <a href="https://wa.me/5547991594952" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-300 hover:text-emerald-200">
+                <i data-lucide="phone" class="w-3.5 h-3.5"></i> (47) 99159-4952
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DIFERENCIAIS COMPETITIVOS -->
+  <section id="diferenciais" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold uppercase tracking-wider mb-3">
+          Nossas Vantagens
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+          Por Que Escolher a Pacific Flowers?
+        </h2>
+        <p class="text-slate-600 text-base">
+          Combinamos maquinário moderno, matérias-primas nobres e um atendimento próximo para entregar a melhor experiência gráfica do mercado.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-300 hover:shadow-lg transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="factory" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Estrutura Própria</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Fábrica estruturada em Jaraguá do Sul / SC, com maquinário próprio para corte, vinco, colagem e personalização.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-300 hover:shadow-lg transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Rigidez & Acabamento</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Utilizamos papéis e polímeros de procedência selecionada, evitando rasgos, falhas de cola ou desbotamento.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-300 hover:shadow-lg transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Agilidade de Produção</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Processos produtivos otimizados para despachar seu pedido com segurança dentro dos prazos acordados.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-300 hover:shadow-lg transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="smile" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Atendimento Humanizado</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Você fala diretamente com quem entende do produto, seja para tirar dúvidas técnicas ou para cotar tiragens especiais.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO FAQ (PERGUNTAS FREQUENTES) -->
+  <section id="faq" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3">
+          Tire Suas Dúvidas
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+          Perguntas Frequentes
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Confira as respostas para as perguntas mais comuns de novos clientes e parceiros.
+        </p>
+      </div>
+
+      <!-- Accordion Container -->
+      <div class="space-y-3.5" id="faqAccordion">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 shadow-sm">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 hover:text-brand-600 transition-colors">
+            <span class="text-sm sm:text-base">Como faço para solicitar envelopes com a minha logomarca?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Basta clicar no botão <strong>"Entrar em Contato"</strong> ou chamar nosso time comercial no WhatsApp. Você nos informa a quantidade desejada, o modelo (kraft ou offset) e nos envia o arquivo da sua logo ou arte para prepararmos a amostra virtual e o orçamento.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 shadow-sm">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 hover:text-brand-600 transition-colors">
+            <span class="text-sm sm:text-base">Vocês vendem para todo o Brasil? Qual é o prazo de entrega?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Sim! Enviamos para todos os estados brasileiros via transportadoras parceiras e Correios. Os prazos variam de acordo com o CEP de destino e a modalidade de frete selecionada, sempre com código de rastreamento.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 shadow-sm">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 hover:text-brand-600 transition-colors">
+            <span class="text-sm sm:text-base">Existe quantidade mínima para pedidos no atacado?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Para produtos padrão de linha (como envelopes em caixas de 100 e 250 unidades, cadernos e cartazes de oferta), fornecemos em embalagens fechadas. Para itens personalizados, nossa equipe analisa a tiragem para oferecer o melhor custo unitário.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 shadow-sm">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 hover:text-brand-600 transition-colors">
+            <span class="text-sm sm:text-base">Quais são as formas de pagamento e emissão de nota fiscal?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Emitimos Nota Fiscal eletrônica em 100% dos pedidos. Aceitamos PIX, boleto bancário (com análise cadastral para empresas) e cartões de crédito.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 shadow-sm">
+          <button class="faq-btn w-full p-5 text-left font-bold text-slate-900 flex items-center justify-between gap-4 hover:text-brand-600 transition-colors">
+            <span class="text-sm sm:text-base">Como posso conhecer o catálogo completo ou fazer um pedido direto?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Você pode navegar pela seção de catálogo desta página ou clicar em <strong>"Conhecer o Catálogo de Produtos"</strong> e <strong>"Fazer um Pedido"</strong> para acessar os canais diretos de atendimento e compra.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BANNER FINAL DE CONVERSÃO / CTA TRIPLO -->
+  <section class="py-20 bg-gradient-to-r from-brand-800 via-brand-700 to-emerald-800 text-white relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-emerald-200 border border-white/20 mb-5">
+        <i data-lucide="package-check" class="w-3.5 h-3.5"></i> Atendimento Rápido & Fábrica Própria
+      </span>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 max-w-3xl mx-auto">
+        Pronto para Elevar o Padrão dos Materiais da Sua Empresa?
+      </h2>
+
+      <p class="text-base sm:text-lg text-emerald-100 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Seja para abastecer seu estoque com produtos escolares e placas para PDV, ou para encomendar envelopes personalizados com a sua marca, estamos prontos para lhe atender.
+      </p>
+
+      <!-- 3 BOTÕES DE AÇÃO DESTACADOS NO BANNER FINAL -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
+        
+        <!-- AÇÃO 1: FAZER UM PEDIDO -->
+        <a href="#contato" data-action="pedido" class="btn-pedido w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 text-base font-bold text-slate-900 bg-amber-400 hover:bg-amber-300 rounded-xl shadow-xl shadow-amber-500/20 hover:-translate-y-0.5 transition-all text-center">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span>Fazer um Pedido</span>
+        </a>
+
+        <!-- AÇÃO 2: CONHECER O CATÁLOGO -->
+        <a href="#catalogo" data-action="catalogo" class="btn-catalogo w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-4 text-sm font-bold text-white bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl hover:-translate-y-0.5 transition-all text-center">
+          <i data-lucide="book-open" class="w-4 h-4"></i>
+          <span>Conhecer o Catálogo</span>
+        </a>
+
+        <!-- AÇÃO 3: ENTRAR EM CONTATO -->
+        <a href="#contato" data-action="contato" class="btn-contato w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 text-sm font-semibold text-white/90 hover:text-white bg-brand-900/60 hover:bg-brand-900 rounded-xl border border-brand-800 transition-all text-center">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Entrar em Contato</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CONTATO & LOCALIZAÇÃO -->
+  <section id="contato" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Informações de Contato -->
+        <div class="lg:col-span-5">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold uppercase tracking-wider mb-4">
+            Canais Oficiais
+          </span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mb-4">
+            Entre em Contato Conosco
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed mb-8">
+            Nossa equipe de atendimento está disponível nos horários de expediente para esclarecer dúvidas, enviar orçamentos personalizados e emitir pedidos.
+          </p>
+
+          <!-- Cards de Contato -->
+          <div class="space-y-4">
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5547991594952" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100 hover:border-emerald-300 transition-colors group">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-sm">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </div>
+              <div class="flex-1">
+                <p class="text-xs font-bold text-emerald-800 uppercase tracking-wider">WhatsApp Comercial</p>
+                <p class="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">(47) 99159-4952</p>
+                <p class="text-xs text-slate-500">Atendimento rápido para dúvidas e orçamentos</p>
+              </div>
+            </a>
+
+            <!-- Telefone Fixo -->
+            <a href="tel:4733719993" class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-colors group">
+              <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div class="flex-1">
+                <p class="text-xs font-bold text-brand-800 uppercase tracking-wider">Telefone Fixo</p>
+                <p class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition-colors">(47) 3371-9993</p>
+                <p class="text-xs text-slate-500">Central de vendas e fábrica</p>
+              </div>
+            </a>
+
+            <!-- E-mail -->
+            <a href="mailto:pedido@pacificflowers.com.br" class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-colors group">
+              <div class="w-10 h-10 rounded-xl bg-slate-700 text-white flex items-center justify-center shrink-0 shadow-sm">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div class="flex-1">
+                <p class="text-xs font-bold text-slate-700 uppercase tracking-wider">E-mail para Pedidos</p>
+                <p class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition-colors">pedido@pacificflowers.com.br</p>
+                <p class="text-xs text-slate-500">Envio de artes, orçamentos e comprovantes</p>
+              </div>
+            </a>
+
+            <!-- Horário & Endereço -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600 space-y-2">
+              <div class="flex items-start gap-2">
+                <i data-lucide="clock" class="w-4 h-4 text-slate-500 shrink-0 mt-0.5"></i>
+                <span><strong>Horário:</strong> Segunda a Sexta das 8h às 17h48 (Fechado sábados, domingos e feriados).</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-slate-500 shrink-0 mt-0.5"></i>
+                <span><strong>Local:</strong> R. João Franzner, 21 - Bairro São Luís, Jaraguá do Sul - SC, CEP 89253-640.</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Formulário Rápido de Mensagem / Orçamento -->
+        <div class="lg:col-span-7">
+          <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Envie uma Mensagem Direta</h3>
+            <p class="text-xs sm:text-sm text-slate-500 mb-6">Preencha os campos abaixo e nosso time entrará em contato com você.</p>
+
+            <form id="contactForm" class="space-y-4" onsubmit="event.preventDefault(); window.handleFormSubmit(this);">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1" for="name">Seu Nome / Empresa *</label>
+                  <input type="text" id="name" required placeholder="Ex: João da Silva / Papelaria Central" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1" for="phone">Telefone / WhatsApp *</label>
+                  <input type="tel" id="phone" required placeholder="(47) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1" for="email">E-mail</label>
+                  <input type="email" id="email" placeholder="seuemail@empresa.com.br" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1" for="interest">Interesse Principal</label>
+                  <select id="interest" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
+                    <option value="envelopes-personalizados">Envelopes Personalizados com Logo</option>
+                    <option value="envelopes-kraft">Envelopes Kraft Natural / DAC</option>
+                    <option value="giz-educativo">Giz de Cera & Linha Educativa</option>
+                    <option value="cadernos">Cadernos & Papelaria Escolar</option>
+                    <option value="placas-pdv">Placas Indicativas & Cartazes PDV</option>
+                    <option value="manuais">Manuais & Impressos Sob Demanda</option>
+                    <option value="outro">Outro Assunto / Parceria</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" for="message">Mensagem ou Detalhes do Pedido</label>
+                <textarea id="message" rows="4" placeholder="Descreva as quantidades aproximadas, tamanhos ou tire suas dúvidas..." class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all resize-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-700 active:bg-brand-800 text-white font-bold text-sm rounded-xl transition-all shadow-md shadow-brand-600/30 flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i> Enviar Mensagem via WhatsApp
+              </button>
+
+              <p class="text-[11px] text-slate-400 text-center">
+                Seus dados estão seguros. Não enviamos spam.
+              </p>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RODAPÉ (FOOTER) COMPLETO -->
+  <footer class="bg-slate-950 text-slate-400 text-xs pt-16 pb-12 border-t border-slate-900 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
+        
+        <!-- Coluna 1: Empresa & Logo -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 p-0.5 flex items-center justify-center">
+              <img src="https://static.wixstatic.com/media/fd5b1a_fa375c3fdf134aac81241f966e07f25e~mv2.png/v1/fill/w_120,h_120,al_c,q_85,enc_avif,quality_auto/Logo.png" 
+                   alt="Logo Pacific Flowers" 
+                   class="w-9 h-9 object-contain rounded-lg bg-white/90 p-1"
+                   onerror="this.style.display='none';">
+            </div>
+            <div>
+              <span class="text-lg font-bold text-white tracking-tight">Pacific<span class="text-brand-500">Flowers</span></span>
+              <p class="text-[10px] text-slate-500 font-semibold uppercase">Indústria & Comércio</p>
+            </div>
+          </div>
+
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            Especialista na fabricação de envelopes kraft, envelopes personalizados com logomarca, giz de cera, linha educativa, cadernos escolares e sinalização para PDV.
+          </p>
+
+          <div class="text-[11px] text-slate-500 space-y-1">
+            <p><strong>Razão Social:</strong> Pacific Flowers Indústria e Comércio Ltda</p>
+            <p><strong>CNPJ:</strong> 03.772.965/0001-90</p>
+            <p><strong>Localização:</strong> Jaraguá do Sul - SC</p>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Navegação Rápida -->
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Navegação</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#hero" class="hover:text-white transition-colors">Início</a></li>
+            <li><a href="#sobre" class="hover:text-white transition-colors">Sobre a Empresa</a></li>
+            <li><a href="#catalogo" class="hover:text-white transition-colors">Catálogo de Produtos</a></li>
+            <li><a href="#b2b" class="hover:text-white transition-colors">Personalização B2B</a></li>
+            <li><a href="#diferenciais" class="hover:text-white transition-colors">Diferenciais de Fábrica</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Categorias de Produtos -->
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Produtos</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#catalogo" class="hover:text-white transition-colors">Envelopes Kraft Natural</a></li>
+            <li><a href="#catalogo" class="hover:text-white transition-colors">Envelopes Plásticos DAC</a></li>
+            <li><a href="#catalogo" class="hover:text-white transition-colors">Giz de Cera 6 Cores & Kits</a></li>
+            <li><a href="#catalogo" class="hover:text-white transition-colors">Cartinhas & Pinturas Infantis</a></li>
+            <li><a href="#catalogo" class="hover:text-white transition-colors">Cadernos de Desenho & Pauta</a></li>
+            <li><a href="#catalogo" class="hover:text-white transition-colors">Placas Indicativas & Cartazes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Os 3 Botões de Ação Rápidos -->
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Ações Rápidas</h4>
+          <div class="space-y-2.5">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2 px-3 text-xs font-bold text-white bg-brand-600 hover:bg-brand-700 rounded-lg flex items-center justify-center gap-1.5 transition-colors">
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer um Pedido
+            </a>
+            <a href="#catalogo" data-action="catalogo" class="btn-catalogo w-full py-2 px-3 text-xs font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center gap-1.5 transition-colors">
+              <i data-lucide="book-open" class="w-3.5 h-3.5"></i> Ver Catálogo
+            </a>
+            <a href="#contato" data-action="contato" class="btn-contato w-full py-2 px-3 text-xs font-semibold text-slate-300 bg-slate-900 hover:bg-slate-800 rounded-lg flex items-center justify-center gap-1.5 transition-colors border border-slate-800">
+              <i data-lucide="phone" class="w-3.5 h-3.5"></i> Falar com Suporte
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright e Assinatura -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-slate-500">
+        <p>© <span id="currentYear">2026</span> Pacific Flowers Indústria e Comércio. Todos os direitos reservados.</p>
+        <p class="text-[11px]">Desenvolvido com tecnologia moderna, alta performance e foco em conversão.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5547991594952?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20da%20Pacific%20Flowers" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Falar no WhatsApp"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl shadow-emerald-500/50 hover:scale-110 active:scale-95 transition-all duration-300">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+    <span class="sr-only">WhatsApp</span>
+  </a>
+
+  <!-- SCRIPTS JS -->
+  <script src="script.js"></script>
+</body>
+</html>

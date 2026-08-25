@@ -1,0 +1,82 @@
+/* Estilos adicionais e refinamento visual para Pacific Flowers Landing Page */
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  }
+}
+
+/* Animações suaves */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Abas de categoria interativas */
+.cat-tab {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.cat-tab:hover {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.cat-tab.active {
+  background-color: #15803d !important;
+  color: #ffffff !important;
+  border-color: #15803d !important;
+  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.25);
+}
+
+/* Transições nos Cards de Produtos */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+/* Estilização suave da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Acordeão FAQ */
+.faq-btn[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-btn[aria-expanded="true"] {
+  color: #15803d;
+}
+
+/* Toast de Notificação */
+#toastNotification {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+}
