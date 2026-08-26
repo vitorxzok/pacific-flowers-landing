@@ -417,75 +417,20 @@
   </section>
 
   <!-- CATÁLOGO INTERATIVO DE PRODUTOS -->
-  <section id="catalogo" class="py-20 bg-slate-50 border-t border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Cabeçalho do Catálogo -->
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-900 text-xs font-bold uppercase tracking-wider mb-3">
-          Linha Completa de Produtos
-        </div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-          Conheça Nosso Catálogo
-        </h2>
-        <p class="text-slate-600 text-base">
-          Navegue pelas nossas categorias principais e encontre o produto ideal para o seu negócio ou revenda.
-        </p>
-      </div>
-
-      <!-- BOTÕES DE FILTRO / ABAS DE CATEGORIA -->
-      <div class="flex items-center justify-center gap-2 flex-wrap mb-10" id="categoryTabs">
-        <button data-cat="all" class="cat-tab active px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold transition-all shadow-sm">
-          Todos os Produtos
-        </button>
-        <button data-cat="envelopes" class="cat-tab px-4 py-2 rounded-2xl text-xs sm:text-sm font-semibold transition-all">
-          ✉️ Envelopes & Embalagens
-        </button>
-        <button data-cat="educativo" class="cat-tab px-4 py-2 rounded-2xl text-xs sm:text-sm font-semibold transition-all">
-          🎨 Giz de Cera & Educativo
-        </button>
-        <button data-cat="cadernos" class="cat-tab px-4 py-2 rounded-2xl text-xs sm:text-sm font-semibold transition-all">
-          📓 Cadernos & Papelaria
-        </button>
-        <button data-cat="pdv" class="cat-tab px-4 py-2 rounded-2xl text-xs sm:text-sm font-semibold transition-all">
-          🏷️ Placas & PDV
-        </button>
-        <button data-cat="manuais" class="cat-tab px-4 py-2 rounded-2xl text-xs sm:text-sm font-semibold transition-all">
-          📄 Manuais & Especiais
-        </button>
-      </div>
-
-      <!-- GRID DE CARDS DE PRODUTOS -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
-
-        <!-- PRODUTO 1: Envelope Kraft Natural 250un -->
-        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="envelopes">
-          <div class="h-48 bg-gradient-to-br from-amber-50 to-amber-100/50 p-6 flex items-center justify-center relative overflow-hidden">
-            <span class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Atacado</span>
-            <div class="w-24 h-24 rounded-2xl bg-amber-200/80 text-amber-800 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
-              <i data-lucide="mail" class="w-12 h-12"></i>
-            </div>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">Envelopes Kraft</span>
-              <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Envelope Kraft Natural - Caixa 250un</h3>
-              <p class="text-xs text-slate-500 line-clamp-2 mb-3">Envelopes resistentes em papel kraft natural de alta qualidade para escritórios, correspondências e envio de documentos.</p>
-              <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-full border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Caixa lacrada com 250 unidades</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Alta resistência e acabamento uniforme</li>
-              </ul>
-            </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido inline-flex whitespace-nowrap items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-full transition-all rounded-2xl transition-all shadow-md shadow-brand-600/20">
-            Fazer um Pedido
-          </a>
-        </div>
-      </div>
-
+    <section id="catalogo" class="py-24 bg-slate-50 border-t border-slate-200 flex flex-col items-center justify-center text-center">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Linha de Produtos
+      </h2>
+      <p class="text-slate-600 text-base mb-10">
+        Descubra nossas soluções em envelopes personalizados, papelaria escolar e materiais para PDV.
+      </p>
+      <button type="button" class="inline-flex justify-center items-center gap-2 px-8 py-4 text-base font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-full transition-all shadow-lg shadow-slate-900/20 hover:-translate-y-0.5">
+        Conheça nosso catálogo
+      </button>
     </div>
   </section>
 
-  <!-- SEÇÃO B2B / PERSONALIZAÇÃO DE ENVELOPES -->
   <section id="b2b" class="py-20 bg-gradient-to-br from-slate-900 via-brand-950 to-slate-900 text-white relative overflow-hidden">
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
