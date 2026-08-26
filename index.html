@@ -24,18 +24,19 @@
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
+          
           colors: {
             brand: {
-              50: '#f0fdf4',
-              100: '#dcfce7',
-              200: '#bbf7d0',
-              300: '#86efac',
-              400: '#4ade80',
-              500: '#15803d',
-              600: '#166534',
-              700: '#14532d',
-              800: '#0f3e22',
-              900: '#0a2916',
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
             },
             accent: {
               50: '#fffbeb',
@@ -66,7 +67,7 @@
   <aside class="bg-slate-900 text-slate-200 text-xs py-2 px-4 border-b border-slate-800">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
       <div class="flex items-center gap-4 text-center sm:text-left flex-wrap justify-center">
-        <span class="inline-flex items-center gap-1 text-emerald-400 font-medium">
+        <span class="inline-flex items-center gap-1 text-amber-400 font-medium">
           <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Vendas Direto da Fábrica para todo o Brasil
         </span>
         <span class="hidden md:inline-block text-slate-500">•</span>
@@ -75,11 +76,11 @@
         </span>
       </div>
       <div class="flex items-center gap-4 text-slate-300">
-        <a href="tel:4733719993" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+        <a href="tel:4733719993" class="hover:text-amber-400 transition-colors flex items-center gap-1">
           <i data-lucide="phone" class="w-3.5 h-3.5"></i> (47) 3371-9993
         </a>
         <span class="text-slate-600">|</span>
-        <a href="mailto:pedido@pacificflowers.com.br" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+        <a href="mailto:pedido@pacificflowers.com.br" class="hover:text-amber-400 transition-colors flex items-center gap-1">
           <i data-lucide="mail" class="w-3.5 h-3.5"></i> pedido@pacificflowers.com.br
         </a>
       </div>
@@ -108,10 +109,10 @@
       </a>
 
       <!-- MENU DE NAVEGAÇÃO DESKTOP -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600">
-        <a href="#sobre" class="hover:text-brand-600 transition-colors">Sobre a Empresa</a>
-        <a href="#catalogo" class="hover:text-brand-600 transition-colors">Linhas de Produtos</a>
-        <a href="#b2b" class="hover:text-brand-600 transition-colors">Personalização & B2B</a>
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-6 text-[13px] xl:text-sm font-medium text-slate-600 whitespace-nowrap">
+        <a href="#sobre" class="hover:text-brand-600 transition-colors">Sobre</a>
+        <a href="#catalogo" class="hover:text-brand-600 transition-colors">Produtos</a>
+        <a href="#b2b" class="hover:text-brand-600 transition-colors">B2B</a>
         <a href="#diferenciais" class="hover:text-brand-600 transition-colors">Diferenciais</a>
         <a href="#faq" class="hover:text-brand-600 transition-colors">Dúvidas</a>
       </nav>
@@ -119,19 +120,19 @@
       <!-- 3 BOTÕES DE AÇÃO PRINCIPAIS (DESKTOP) -->
       <div class="hidden md:flex items-center gap-2.5">
         <!-- BOTÃO 1: ENTRAR EM CONTATO -->
-        <a href="#contato" data-action="contato" class="btn-contato inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-all border border-slate-200">
+        <a href="#contato" data-action="contato" class="btn-contato inline-flex whitespace-nowrap items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-all border border-slate-200">
           <i data-lucide="message-square" class="w-3.5 h-3.5 text-slate-600"></i>
           <span>Entrar em Contato</span>
         </a>
 
         <!-- BOTÃO 2: CONHECER O CATÁLOGO -->
-        <a href="#catalogo" data-action="catalogo" class="btn-catalogo inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-100 rounded-lg transition-all border border-brand-200">
+        <a href="#catalogo" data-action="catalogo" class="btn-catalogo inline-flex whitespace-nowrap items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-brand-700 bg-brand-50 hover:bg-brand-100 rounded-lg transition-all border border-brand-200">
           <i data-lucide="book-open" class="w-3.5 h-3.5 text-brand-600"></i>
           <span>Catálogo</span>
         </a>
 
         <!-- BOTÃO 3: FAZER UM PEDIDO (DESTAQUE PRINCIPAL) -->
-        <a href="#contato" data-action="pedido" class="btn-pedido inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-brand-600 hover:bg-brand-700 active:bg-brand-800 rounded-lg shadow-sm shadow-brand-600/30 hover:shadow-brand-600/40 hover:-translate-y-0.5 transition-all">
+        <a href="#contato" data-action="pedido" class="btn-pedido inline-flex whitespace-nowrap items-center gap-1.5 px-4 py-2 text-xs font-bold text-slate-900 bg-brand-500 hover:bg-brand-600 active:bg-brand-700 rounded-lg shadow-sm shadow-brand-600/30 hover:shadow-brand-600/40 hover:-translate-y-0.5 transition-all">
           <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
           <span>Fazer um Pedido</span>
         </a>
@@ -147,16 +148,16 @@
     <!-- MENU MOBILE RETRÁTIL -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 shadow-xl animate-fadeIn">
       <nav class="flex flex-col gap-3 text-base font-medium text-slate-700 mb-5">
-        <a href="#sobre" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Sobre a Empresa</a>
-        <a href="#catalogo" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Linhas de Produtos</a>
-        <a href="#b2b" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Personalização & B2B</a>
+        <a href="#sobre" class="hover:text-brand-600 transition-colors">Sobre</a>
+        <a href="#catalogo" class="hover:text-brand-600 transition-colors">Produtos</a>
+        <a href="#b2b" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Personalizao</a>
         <a href="#diferenciais" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Diferenciais</a>
         <a href="#faq" class="py-2 border-b border-slate-100 hover:text-brand-600 transition-colors">Dúvidas Frequentes</a>
       </nav>
 
       <!-- 3 BOTÕES NO MENU MOBILE -->
       <div class="flex flex-col gap-2.5">
-        <a href="#contato" data-action="pedido" class="btn-pedido w-full flex items-center justify-center gap-2 py-3 text-sm font-bold text-white bg-brand-600 rounded-xl shadow-md">
+        <a href="#contato" data-action="pedido" class="btn-pedido w-full flex items-center justify-center gap-2 py-3 text-sm font-bold text-slate-900 bg-brand-500 rounded-xl shadow-md">
           <i data-lucide="shopping-bag" class="w-4 h-4"></i> Fazer um Pedido
         </a>
         <a href="#catalogo" data-action="catalogo" class="btn-catalogo w-full flex items-center justify-center gap-2 py-2.5 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 rounded-xl">
@@ -179,7 +180,7 @@
         <div class="lg:col-span-7 flex flex-col items-start text-left">
           
           <!-- Selo Badge -->
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/80 border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/80 border border-brand-200 text-brand-900 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
             <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
             Direto da Fábrica • Jaraguá do Sul / SC
           </div>
@@ -196,7 +197,7 @@
           <div class="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-10">
             
             <!-- AÇÃO 1: FAZER UM PEDIDO -->
-            <a href="#contato" data-action="pedido" class="btn-pedido inline-flex justify-center items-center gap-2.5 px-6 py-3.5 text-base font-bold text-white bg-brand-600 hover:bg-brand-700 active:bg-brand-800 rounded-xl shadow-lg shadow-brand-600/30 hover:shadow-brand-600/40 hover:-translate-y-0.5 transition-all text-center">
+            <a href="#contato" data-action="pedido" class="btn-pedido inline-flex justify-center items-center gap-2.5 px-6 py-3.5 text-base font-bold text-slate-900 bg-brand-500 hover:bg-brand-600 active:bg-brand-700 rounded-xl shadow-lg shadow-brand-600/30 hover:shadow-brand-600/40 hover:-translate-y-0.5 transition-all text-center">
               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
               <span>Fazer um Pedido</span>
             </a>
@@ -227,7 +228,7 @@
               </div>
             </div>
             <div class="flex items-center gap-2.5">
-              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
                 <i data-lucide="truck" class="w-4 h-4"></i>
               </div>
               <div class="text-xs">
@@ -257,7 +258,7 @@
                   <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Linhas em Destaque</span>
                   <h2 class="text-xl font-bold text-slate-900">Mix Completo de Produtos</h2>
                 </div>
-                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-800">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-900">
                   B2B & Atacado
                 </span>
               </div>
@@ -298,7 +299,7 @@
                 </div>
 
                 <div class="flex items-center gap-3.5 p-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-brand-50/50 transition-colors">
-                  <div class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                  <div class="w-12 h-12 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
                     <i data-lucide="tag" class="w-6 h-6"></i>
                   </div>
                   <div class="flex-1 min-w-0">
@@ -312,14 +313,14 @@
               <!-- CTA de rodapé do card -->
               <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
                 <span class="text-xs text-slate-500">Pronto para abastecer seu estoque?</span>
-                <a href="#catalogo" data-action="catalogo" class="btn-catalogo text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center gap-1">
+                <a href="#catalogo" data-action="catalogo" class="btn-catalogo text-xs font-bold text-brand-600 hover:text-brand-900 flex items-center gap-1">
                   Ver todas as opções <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                 </a>
               </div>
             </div>
 
             <!-- Efeito decorativo card -->
-            <div class="absolute -bottom-4 -right-4 w-full h-full bg-gradient-to-tr from-brand-600 to-emerald-400 rounded-3xl -z-10 opacity-20"></div>
+            <div class="absolute -bottom-4 -right-4 w-full h-full bg-gradient-to-tr from-brand-600 to-amber-400 rounded-3xl -z-10 opacity-20"></div>
           </div>
         </div>
 
@@ -333,22 +334,22 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-brand-800/80">
         
         <div class="pt-4 md:pt-0">
-          <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">+100%</p>
+          <p class="text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">+100%</p>
           <p class="text-xs sm:text-sm text-slate-300 font-medium">Personalizável com sua Marca</p>
         </div>
 
         <div class="pt-4 md:pt-0">
-          <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">Direto</p>
+          <p class="text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">Direto</p>
           <p class="text-xs sm:text-sm text-slate-300 font-medium">Da Indústria para seu Negócio</p>
         </div>
 
         <div class="pt-4 md:pt-0">
-          <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">Variedade</p>
+          <p class="text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">Variedade</p>
           <p class="text-xs sm:text-sm text-slate-300 font-medium">Envelopes, Papelaria & Brinquedos</p>
         </div>
 
         <div class="pt-4 md:pt-0">
-          <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">Brasil</p>
+          <p class="text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">Brasil</p>
           <p class="text-xs sm:text-sm text-slate-300 font-medium">Logística e Envio para Todo o País</p>
         </div>
 
@@ -367,7 +368,7 @@
             <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-brand-500/20 rounded-full blur-2xl"></div>
             
             <div class="relative z-10">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-6">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-6">
                 <i data-lucide="building-2" class="w-3.5 h-3.5"></i> Perfil Corporativo
               </span>
 
@@ -380,7 +381,7 @@
               <div class="space-y-3 bg-white/10 rounded-2xl p-4 text-xs backdrop-blur-sm border border-white/10">
                 <div class="flex items-center justify-between">
                   <span class="text-slate-400 font-medium">CNPJ:</span>
-                  <span class="font-mono font-semibold text-emerald-300">03.772.965/0001-90</span>
+                  <span class="font-mono font-semibold text-amber-300">03.772.965/0001-90</span>
                 </div>
                 <div class="flex items-start justify-between gap-2">
                   <span class="text-slate-400 font-medium shrink-0">Endereço:</span>
@@ -395,7 +396,7 @@
               <!-- Botão Contato Sobre -->
               <div class="mt-6 pt-4 border-t border-white/15 flex items-center justify-between">
                 <span class="text-xs text-slate-400">Precisa de cotação corporativa?</span>
-                <a href="#contato" data-action="contato" class="btn-contato text-xs font-bold text-emerald-300 hover:text-white flex items-center gap-1 transition-colors">
+                <a href="#contato" data-action="contato" class="btn-contato text-xs font-bold text-amber-300 hover:text-white flex items-center gap-1 transition-colors">
                   Fale com a equipe <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                 </a>
               </div>
@@ -433,7 +434,7 @@
             </div>
 
             <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-3">
                 <i data-lucide="sliders" class="w-5 h-5"></i>
               </div>
               <h3 class="text-sm font-bold text-slate-900 mb-1">Personalização Total</h3>
@@ -461,7 +462,7 @@
       
       <!-- Cabeçalho do Catálogo -->
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-900 text-xs font-bold uppercase tracking-wider mb-3">
           Linha Completa de Produtos
         </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -511,11 +512,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Envelope Kraft Natural - Caixa 250un</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Envelopes resistentes em papel kraft natural de alta qualidade para escritórios, correspondências e envio de documentos.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Caixa lacrada com 250 unidades</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Alta resistência e acabamento uniforme</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Caixa lacrada com 250 unidades</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Alta resistência e acabamento uniforme</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -535,11 +536,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Envelope Kraft Natural - Caixa 100un</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Versão compacta ideal para pequenos comércios, escritórios e uso contínuo com praticidade.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Embalagem prática com 100 unidades</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Papel kraft selecionado</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Embalagem prática com 100 unidades</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Papel kraft selecionado</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -559,11 +560,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Envelope Plástico DAC - 100un</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Envelopes plásticos transparentes e reforçados, disponíveis com ou sem furação para pastas catálogo.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Com ou sem furo para fichários</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Pacote com 100 unidades</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Com ou sem furo para fichários</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Pacote com 100 unidades</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -571,7 +572,7 @@
 
         <!-- PRODUTO 4: Envelopes 100% Personalizados -->
         <div class="product-card group bg-white rounded-2xl border-2 border-brand-300 overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="envelopes">
-          <div class="h-48 bg-gradient-to-br from-brand-600 to-emerald-700 p-6 flex items-center justify-center relative overflow-hidden text-white">
+          <div class="h-48 bg-gradient-to-br from-brand-600 to-amber-700 p-6 flex items-center justify-center relative overflow-hidden text-white">
             <span class="absolute top-3 left-3 bg-amber-400 text-slate-900 text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase">Personalizado</span>
             <div class="w-24 h-24 rounded-2xl bg-white/20 backdrop-blur-sm text-white flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
               <i data-lucide="sparkles" class="w-12 h-12"></i>
@@ -607,11 +608,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Cartinhas para Colorir + Brinde Giz</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Kit completo de cartinhas temáticas para pintura e criatividade infantil, acompanhado de caixa de giz de cera 6 cores.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Acompanha giz de cera 6 cores</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Excelente saída para papelarias</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Acompanha giz de cera 6 cores</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Excelente saída para papelarias</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -631,11 +632,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Atividades Educativas 20x30 + Brinde</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Bloco grande de atividades lúdicas e educativas no tamanho 20x30cm, estimulando coordenação motora e aprendizado.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Formato amplo 20x30cm</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Diversão e aprendizado integrados</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Formato amplo 20x30cm</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Diversão e aprendizado integrados</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -643,9 +644,9 @@
 
         <!-- PRODUTO 7: Caligrafia 20x30 Sortido & Dinheirinho -->
         <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-category="educativo">
-          <div class="h-48 bg-gradient-to-br from-emerald-50 to-emerald-100/50 p-6 flex items-center justify-center relative overflow-hidden">
-            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Jogos & Treino</span>
-            <div class="w-24 h-24 rounded-2xl bg-emerald-200/80 text-emerald-700 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+          <div class="h-48 bg-gradient-to-br from-amber-50 to-amber-100/50 p-6 flex items-center justify-center relative overflow-hidden">
+            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Jogos & Treino</span>
+            <div class="w-24 h-24 rounded-2xl bg-amber-200/80 text-amber-700 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
               <i data-lucide="pencil-ruler" class="w-12 h-12"></i>
             </div>
           </div>
@@ -655,11 +656,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Caligrafia 20x30 / Dinheirinho (12un)</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Linha completa de caligrafia sortida para desenvolvimento escolar e pacotes de Dinheirinho/Dinheirão para brincadeiras educativas.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Pacotes fechados para revenda</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Ideal para escolas e bazares</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Pacotes fechados para revenda</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Ideal para escolas e bazares</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -679,11 +680,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Caderno de Desenho (20x27,5cm / 20x14cm)</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Cadernos de capa flexível com folhas de alta alvura, disponíveis em 48 e 96 folhas para artes e desenhos escolares.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Opções de 48 e 96 folhas</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Capa flexível e resistente</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Opções de 48 e 96 folhas</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Capa flexível e resistente</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -703,11 +704,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Cadernetas 10x13,7cm & Cadernos Pauta</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Cadernetas práticas de bolso e cadernos pautados em múltiplos tamanhos para rotina de trabalho ou estudos.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Pautas nítidas e papel encorpado</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Modelos 14x20cm e 20x27,5cm</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Pautas nítidas e papel encorpado</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Modelos 14x20cm e 20x27,5cm</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -727,11 +728,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Placas Indicativas (20x30, 15x20, 10x30, 7x30)</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Placas indicativas e informativas em diversos formatos para comércios, indústrias, condomínios e lojas.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Alta durabilidade e legibilidade</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Formatos 20x30, 15x20, 10x30 e 7x30cm</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Alta durabilidade e legibilidade</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Formatos 20x30, 15x20, 10x30 e 7x30cm</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -751,11 +752,11 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Cartazes de Oferta & Splash Promocional</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Cartazes com solapa 20x30cm (pct 12un) e cartazes grandes de oferta 63x43cm (50 e 100un) para chamar a atenção no ponto de venda.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Cartaz 63x43cm e 20x30cm c/ solapa</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Destaque imediato de preços e promoções</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Cartaz 63x43cm e 20x30cm c/ solapa</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Destaque imediato de preços e promoções</li>
               </ul>
             </div>
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2.5 px-3 bg-brand-600 hover:bg-brand-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer Pedido
             </a>
           </div>
@@ -775,8 +776,8 @@
               <h3 class="text-base font-bold text-slate-900 mt-1 mb-2 group-hover:text-brand-600 transition-colors">Manuais Técnicos & Impressos Corporativos</h3>
               <p class="text-xs text-slate-500 line-clamp-2 mb-3">Produção gráfica de manuais de instrução, termos de garantia e folhetos técnicos para indústrias e montadoras.</p>
               <ul class="text-[11px] text-slate-600 space-y-1 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Dobras e acabamentos especiais</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Tiragens em larga escala</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Dobras e acabamentos especiais</li>
+                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Tiragens em larga escala</li>
               </ul>
             </div>
             <a href="#contato" data-action="contato" class="btn-contato w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm">
@@ -797,7 +798,7 @@
           <a href="#contato" data-action="contato" class="btn-contato px-5 py-3 text-xs sm:text-sm font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all border border-slate-300">
             Falar com Atendente
           </a>
-          <a href="#contato" data-action="pedido" class="btn-pedido px-5 py-3 text-xs sm:text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 rounded-xl transition-all shadow-md shadow-brand-600/20">
+          <a href="#contato" data-action="pedido" class="btn-pedido px-5 py-3 text-xs sm:text-sm font-bold text-slate-900 bg-brand-500 hover:bg-brand-600 rounded-xl transition-all shadow-md shadow-brand-600/20">
             Fazer um Pedido
           </a>
         </div>
@@ -813,12 +814,12 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <div class="lg:col-span-6">
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold uppercase tracking-wider mb-4">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold uppercase tracking-wider mb-4">
             <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Vendas Corporativas & Atacado
           </span>
 
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-6">
-            Personalize Envelopes e Materiais com a <span class="text-emerald-400">Identidade da sua Marca.</span>
+            Personalize Envelopes e Materiais com a <span class="text-amber-400">Identidade da sua Marca.</span>
           </h2>
 
           <p class="text-base text-slate-300 leading-relaxed mb-8">
@@ -829,7 +830,7 @@
           <div class="space-y-4 mb-8">
             
             <div class="flex items-start gap-5 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-              <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-emerald-500/30">
+              <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-amber-500/30">
                 1
               </div>
               <div>
@@ -839,7 +840,7 @@
             </div>
 
             <div class="flex items-start gap-5 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-              <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-emerald-500/30">
+              <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-amber-500/30">
                 2
               </div>
               <div>
@@ -849,7 +850,7 @@
             </div>
 
             <div class="flex items-start gap-5 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-              <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-emerald-500/30">
+              <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-extrabold text-sm shrink-0 border border-amber-500/30">
                 3
               </div>
               <div>
@@ -862,7 +863,7 @@
 
           <!-- CTAs B2B -->
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a href="#contato" data-action="contato" class="btn-contato inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-slate-900 bg-emerald-400 hover:bg-emerald-300 rounded-xl transition-all shadow-lg shadow-emerald-500/20 text-center">
+            <a href="#contato" data-action="contato" class="btn-contato inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-slate-900 bg-amber-400 hover:bg-amber-300 rounded-xl transition-all shadow-lg shadow-amber-500/20 text-center">
               <i data-lucide="message-square" class="w-4 h-4"></i>
               <span>Solicitar Orçamento B2B</span>
             </a>
@@ -878,7 +879,7 @@
         <div class="lg:col-span-6">
           <div class="bg-white/10 border border-white/15 rounded-3xl p-6 sm:p-8 backdrop-blur-md">
             <h3 class="text-xl font-bold mb-6 flex items-center gap-2.5">
-              <i data-lucide="check-check" class="w-6 h-6 text-emerald-400"></i> Por que comprar direto com a Pacific Flowers?
+              <i data-lucide="check-check" class="w-6 h-6 text-amber-400"></i> Por que comprar direto com a Pacific Flowers?
             </h3>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -889,7 +890,7 @@
               </div>
 
               <div class="p-4 rounded-2xl bg-black/20 border border-white/5">
-                <i data-lucide="layers" class="w-6 h-6 text-emerald-400 mb-2"></i>
+                <i data-lucide="layers" class="w-6 h-6 text-amber-400 mb-2"></i>
                 <h4 class="text-sm font-bold text-white mb-1">Grandes Tiragens</h4>
                 <p class="text-xs text-slate-300">Capacidade produtiva para atender pedidos volumosos com prazos pontuais.</p>
               </div>
@@ -910,7 +911,7 @@
             <!-- Faixa rápida de contato WhatsApp -->
             <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-slate-300">Atendimento rápido via WhatsApp:</span>
-              <a href="https://wa.me/5547991594952" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-300 hover:text-emerald-200">
+              <a href="https://wa.me/5547991594952" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-300 hover:text-amber-200">
                 <i data-lucide="phone" class="w-3.5 h-3.5"></i> (47) 99159-4952
               </a>
             </div>
@@ -950,7 +951,7 @@
         </div>
 
         <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-300 hover:shadow-lg transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
             <i data-lucide="shield-check" class="w-6 h-6"></i>
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">Rigidez & Acabamento</h3>
@@ -983,7 +984,7 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-12">
-        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-900 text-xs font-bold uppercase tracking-wider mb-3">
           Tire Suas Dúvidas
         </span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -1058,10 +1059,10 @@
   </section>
 
   <!-- BANNER FINAL DE CONVERSÃO / CTA TRIPLO -->
-  <section class="py-20 bg-gradient-to-r from-brand-800 via-brand-700 to-emerald-800 text-white relative overflow-hidden">
+  <section class="py-20 bg-gradient-to-r from-brand-800 via-brand-700 to-amber-800 text-white relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       
-      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-emerald-200 border border-white/20 mb-5">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-amber-200 border border-white/20 mb-5">
         <i data-lucide="package-check" class="w-3.5 h-3.5"></i> Atendimento Rápido & Fábrica Própria
       </span>
 
@@ -1069,7 +1070,7 @@
         Pronto para Elevar o Padrão dos Materiais da Sua Empresa?
       </h2>
 
-      <p class="text-base sm:text-lg text-emerald-100 max-w-2xl mx-auto mb-10 leading-relaxed">
+      <p class="text-base sm:text-lg text-amber-100 max-w-2xl mx-auto mb-10 leading-relaxed">
         Seja para abastecer seu estoque com produtos escolares e placas para PDV, ou para encomendar envelopes personalizados com a sua marca, estamos prontos para lhe atender.
       </p>
 
@@ -1121,13 +1122,13 @@
           <div class="space-y-4">
             
             <!-- WhatsApp -->
-            <a href="https://wa.me/5547991594952" target="_blank" rel="noopener noreferrer" class="flex items-start gap-5 p-6 rounded-2xl bg-emerald-50/50 border border-emerald-100 hover:border-emerald-300 transition-colors group">
-              <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-sm">
+            <a href="https://wa.me/5547991594952" target="_blank" rel="noopener noreferrer" class="flex items-start gap-5 p-6 rounded-2xl bg-amber-50/50 border border-amber-100 hover:border-amber-300 transition-colors group">
+              <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-sm">
                 <i data-lucide="message-circle" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
-                <p class="text-xs font-semibold text-emerald-800 uppercase tracking-wider mb-1.5">WhatsApp Comercial</p>
-                <p class="text-lg font-semibold text-slate-900 mb-1 group-hover:text-emerald-700 transition-colors">(47) 99159-4952</p>
+                <p class="text-xs font-semibold text-amber-800 uppercase tracking-wider mb-1.5">WhatsApp Comercial</p>
+                <p class="text-lg font-semibold text-slate-900 mb-1 group-hover:text-amber-700 transition-colors">(47) 99159-4952</p>
                 <p class="text-sm text-slate-500 leading-relaxed">Atendimento rápido para dúvidas e orçamentos</p>
               </div>
             </a>
@@ -1138,7 +1139,7 @@
                 <i data-lucide="phone" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
-                <p class="text-xs font-semibold text-brand-800 uppercase tracking-wider mb-1.5">Telefone Fixo</p>
+                <p class="text-xs font-semibold text-brand-900 uppercase tracking-wider mb-1.5">Telefone Fixo</p>
                 <p class="text-lg font-semibold text-slate-900 mb-1 group-hover:text-brand-700 transition-colors">(47) 3371-9993</p>
                 <p class="text-sm text-slate-500 leading-relaxed">Central de vendas e fábrica</p>
               </div>
@@ -1215,7 +1216,7 @@
                 <textarea id="message" rows="4" placeholder="Descreva as quantidades aproximadas, tamanhos ou tire suas dúvidas..." class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all resize-none"></textarea>
               </div>
 
-              <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-700 active:bg-brand-800 text-white font-bold text-sm rounded-xl transition-all shadow-md shadow-brand-600/30 flex items-center justify-center gap-2">
+              <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-600 active:bg-brand-700 text-white font-bold text-sm rounded-xl transition-all shadow-md shadow-brand-600/30 flex items-center justify-center gap-2">
                 <i data-lucide="send" class="w-4 h-4"></i> Enviar Mensagem via WhatsApp
               </button>
 
@@ -1294,7 +1295,7 @@
         <div>
           <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Ações Rápidas</h4>
           <div class="space-y-2.5">
-            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2 px-3 text-xs font-bold text-white bg-brand-600 hover:bg-brand-700 rounded-lg flex items-center justify-center gap-1.5 transition-colors">
+            <a href="#contato" data-action="pedido" class="btn-pedido w-full py-2 px-3 text-xs font-bold text-slate-900 bg-brand-500 hover:bg-brand-600 rounded-lg flex items-center justify-center gap-1.5 transition-colors">
               <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Fazer um Pedido
             </a>
             <a href="#catalogo" data-action="catalogo" class="btn-catalogo w-full py-2 px-3 text-xs font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center gap-1.5 transition-colors">
@@ -1322,7 +1323,7 @@
      target="_blank" 
      rel="noopener noreferrer" 
      aria-label="Falar no WhatsApp"
-     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl shadow-emerald-500/50 hover:scale-110 active:scale-95 transition-all duration-300">
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-amber-500 hover:bg-amber-600 text-white rounded-full flex items-center justify-center shadow-2xl shadow-amber-500/50 hover:scale-110 active:scale-95 transition-all duration-300">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
     <span class="sr-only">WhatsApp</span>
   </a>
