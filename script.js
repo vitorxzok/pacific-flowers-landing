@@ -8,13 +8,13 @@
  */
 const LINKS_CONFIG = {
   // 1. BOTÃO "ENTRAR EM CONTATO"
-  CONTATO_URL: "https://wa.me/5547991594952?text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20a%20Pacific%20Flowers",
+  CONTATO_URL: "https://wa.me/5547996362387?text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20a%20Pacific%20Flowers",
 
   // 2. BOTÃO "CONHECER O CATÁLOGO DE PRODUTOS"
-  CATALOGO_URL: "#catalogo", // Você pode alterar para: "https://seusite.com.br/catalogo" ou link de PDF / página externa
+  CATALOGO_URL: "https://catalogogeral.vercel.app/", 
 
   // 3. BOTÃO "FAZER UM PEDIDO"
-  PEDIDO_URL: "https://wa.me/5547991594952?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20de%20produtos%20da%20Pacific%20Flowers" // Você pode alterar para seu carrinho / loja / checkout
+  PEDIDO_URL: "https://catalogogeral.vercel.app/" 
 };
 
 // ============================================================================
