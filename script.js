@@ -63,6 +63,17 @@ function aplicarLinksConfigurados() {
         btn.removeAttribute("target");
         btn.removeAttribute("rel");
       }
+
+      // Meta Pixel Event Tracking
+      btn.addEventListener('click', () => {
+        if (typeof fbq === 'function') {
+          if (actionKey === 'contato') {
+            fbq('track', 'Contact');
+          } else if (actionKey === 'pedido' || actionKey === 'catalogo') {
+            fbq('track', 'InitiateCheckout');
+          }
+        }
+      });
     });
   });
 }
@@ -185,6 +196,14 @@ window.handleFormSubmit = function (form) {
     `🏷️ *Interesse:* ${encodeURIComponent(interest)}%0A` +
     (message ? `💬 *Mensagem:* ${encodeURIComponent(message)}%0A` : "");
 
-  const whatsappUrl = `https://wa.me/5547991594952?text=${text}`;
+  const whatsappUrl = `https://wa.me/5547996362387?text=${text}`;
+
+  // Meta Pixel Event Tracking - Form Submit (Lead)
+  if (typeof fbq === 'function') {
+    fbq('track', 'Lead', {
+      content_name: interest
+    });
+  }
+
   window.open(whatsappUrl, "_blank");
 };
